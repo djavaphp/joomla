@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset>
+
+              <field name="id" type="text" default="0" label="COM_USER_DETAILS_FORM_LBL_DETAILS_ID"
+            readonly="true" class="readonly"
+            description="JGLOBAL_FIELD_ID_DESC" /> 
+
+       <field name="created_by" type="createdby" default="" 
+            label="COM_USER_DETAILS_FORM_LBL_DETAILS_CREATED_BY"
+            description="COM_USER_DETAILS_FORM_DESC_DETAILS_CREATED_BY"  /> 
+
+       <field name="first_name" type="text"
+                
+            label="COM_USER_DETAILS_FORM_LBL_DETAILS_FIRST_NAME"
+            description="COM_USER_DETAILS_FORM_DESC_DETAILS_FIRST_NAME" 
+                
+                
+                 /> 
+
+       <field name="last_name" type="text"
+                
+            label="COM_USER_DETAILS_FORM_LBL_DETAILS_LAST_NAME"
+            description="COM_USER_DETAILS_FORM_DESC_DETAILS_LAST_NAME" 
+                
+                
+                 /> 
+
+       <field name="telephone" type="text"
+                
+            label="COM_USER_DETAILS_FORM_LBL_DETAILS_TELEPHONE"
+            description="COM_USER_DETAILS_FORM_DESC_DETAILS_TELEPHONE" 
+                
+                
+                 /> 
+
+       <field name="fax" type="text"
+                
+            label="COM_USER_DETAILS_FORM_LBL_DETAILS_FAX"
+            description="COM_USER_DETAILS_FORM_DESC_DETAILS_FAX" 
+                
+                
+                 /> 
+
+       <field name="company" type="text"
+                
+            label="COM_USER_DETAILS_FORM_LBL_DETAILS_COMPANY"
+            description="COM_USER_DETAILS_FORM_DESC_DETAILS_COMPANY" 
+                
+                
+                 /> 
+
+       <field name="comapny_id" type="text"
+                
+            label="COM_USER_DETAILS_FORM_LBL_DETAILS_COMAPNY_ID"
+            description="COM_USER_DETAILS_FORM_DESC_DETAILS_COMAPNY_ID" 
+                
+                
+                 /> 
+
+       <field name="address1" type="text"
+                
+            label="COM_USER_DETAILS_FORM_LBL_DETAILS_ADDRESS1"
+            description="COM_USER_DETAILS_FORM_DESC_DETAILS_ADDRESS1" 
+                
+                
+                 /> 
+
+       <field name="address2" type="text"
+                
+            label="COM_USER_DETAILS_FORM_LBL_DETAILS_ADDRESS2"
+            description="COM_USER_DETAILS_FORM_DESC_DETAILS_ADDRESS2" 
+                
+                
+                 /> 
+
+       <field name="city" type="text"
+                
+            label="COM_USER_DETAILS_FORM_LBL_DETAILS_CITY"
+            description="COM_USER_DETAILS_FORM_DESC_DETAILS_CITY" 
+                
+                
+                 /> 
+
+       <field name="post_code" type="text"
+                
+            label="COM_USER_DETAILS_FORM_LBL_DETAILS_POST_CODE"
+            description="COM_USER_DETAILS_FORM_DESC_DETAILS_POST_CODE" 
+                
+                
+                 /> 
+
+       <field name="country" type="text"
+                
+            label="COM_USER_DETAILS_FORM_LBL_DETAILS_COUNTRY"
+            description="COM_USER_DETAILS_FORM_DESC_DETAILS_COUNTRY" 
+                
+                
+                 /> 
+
+       <field name="region_state" type="text"
+                
+            label="COM_USER_DETAILS_FORM_LBL_DETAILS_REGION_STATE"
+            description="COM_USER_DETAILS_FORM_DESC_DETAILS_REGION_STATE" 
+                
+                
+                 /> 
+
+       <field name="password" type="text"
+                
+            label="COM_USER_DETAILS_FORM_LBL_DETAILS_PASSWORD"
+            description="COM_USER_DETAILS_FORM_DESC_DETAILS_PASSWORD" 
+                
+                
+                 /> 
+
+       <field name="password_confirm" type="text"
+                
+            label="COM_USER_DETAILS_FORM_LBL_DETAILS_PASSWORD_CONFIRM"
+            description="COM_USER_DETAILS_FORM_DESC_DETAILS_PASSWORD_CONFIRM" 
+                
+                
+                 /> 
+
+       <field name="subscribe" type="radio"
+                
+            label="COM_USER_DETAILS_FORM_LBL_DETAILS_SUBSCRIBE"
+            description="COM_USER_DETAILS_FORM_DESC_DETAILS_SUBSCRIBE" 
+                
+                
+                >
+                <option value="1">Yes</option>
+                <option value="0">No</option>
+        </field> 
+
+         <field
+        name="state"
+        type="list"
+        label="JSTATUS"
+        description="JFIELD_PUBLISHED_DESC"
+        class="inputbox"
+        size="1"
+        default="1">
+        <option value="1">JPUBLISHED</option>
+        <option value="0">JUNPUBLISHED</option>
+        <option value="2">JARCHIVED</option>
+        <option value="-2">JTRASHED</option>
+    </field> 
+
+                        <field name="checked_out" type="hidden" filter="unset" />
+        <field name="checked_out_time" type="hidden" filter="unset" /> 
+
+ </fieldset> 
+
+ <fieldset 
+                        name="accesscontrol">
+                       <field name="asset_id" type="hidden" filter="unset" />
+                       <field name="rules"
+                            type="rules"
+                            label="JFIELD_RULES_LABEL"
+                            translate_label="false"
+                            filter="rules"
+                            validate="rules"
+                            class="inputbox"
+                            component="com_user_details"
+                            section="details"
+                        />
+
+	</fieldset>
+
+</form>
